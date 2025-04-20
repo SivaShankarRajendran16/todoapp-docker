@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  todo-nginx:
+    image: your-dockerhub-username/todoapp-nginx
+    ports:
+      - "3000:80"
+    volumes:
+      - ./nginx-data:/var/opt/nginx
+    container_name: todo-nginx
